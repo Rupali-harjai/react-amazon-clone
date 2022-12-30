@@ -1,0 +1,120 @@
+[debug] [2022-12-30T07:07:29.095Z] ----------------------------------------------------------------------
+[debug] [2022-12-30T07:07:29.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rharjai\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-12-30T07:07:29.100Z] CLI Version:   11.19.0
+[debug] [2022-12-30T07:07:29.100Z] Platform:      win32
+[debug] [2022-12-30T07:07:29.100Z] Node Version:  v16.14.2
+[debug] [2022-12-30T07:07:29.103Z] Time:          Fri Dec 30 2022 12:37:29 GMT+0530 (India Standard Time)
+[debug] [2022-12-30T07:07:29.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-30T07:07:29.254Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-30T07:07:29.255Z] > authorizing via signed-in user (harjairupali@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-12-30T07:07:29.280Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-30T07:07:29.281Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-30T07:07:29.281Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-30T07:07:29.304Z] [hub] writing locator at C:\Users\rharjai\AppData\Local\Temp\hub-app-2a72a.json
+[debug] [2022-12-30T07:07:29.365Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-30T07:07:29.365Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-30T07:07:29.366Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-30T07:07:29.477Z] defaultcredentials: writing to file C:\Users\rharjai\AppData\Roaming\firebase\harjairupali_gmail_com_application_default_credentials.json
+[debug] [2022-12-30T07:07:29.483Z] Setting GAC to C:\Users\rharjai\AppData\Roaming\firebase\harjairupali_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\rharjai\\AppData\\Roaming\\firebase\\harjairupali_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-30T07:07:29.487Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a/adminSdkConfig [none]
+[debug] [2022-12-30T07:07:30.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a/adminSdkConfig 200
+[debug] [2022-12-30T07:07:30.870Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a/adminSdkConfig {"projectId":"app-2a72a","storageBucket":"app-2a72a.appspot.com"}
+[debug] [2022-12-30T07:07:30.905Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/app-2a72a/sites 
+[debug] [2022-12-30T07:07:32.438Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/app-2a72a/sites 200
+[debug] [2022-12-30T07:07:32.438Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/app-2a72a/sites {"sites":[{"name":"projects/app-2a72a/sites/app-2a72a","defaultUrl":"https://app-2a72a.web.app","appId":"1:569311050804:web:1979d01c85d13a8cd69e61","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-30T07:07:32.439Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a/webApps/1:569311050804:web:1979d01c85d13a8cd69e61/config [none]
+[debug] [2022-12-30T07:07:33.710Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a/webApps/1:569311050804:web:1979d01c85d13a8cd69e61/config 200
+[debug] [2022-12-30T07:07:33.710Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a/webApps/1:569311050804:web:1979d01c85d13a8cd69e61/config {"projectId":"app-2a72a","appId":"1:569311050804:web:1979d01c85d13a8cd69e61","storageBucket":"app-2a72a.appspot.com","apiKey":"AIzaSyAmEOnbmCraINZpKAYtbe3mUPtWak-APZo","authDomain":"app-2a72a.firebaseapp.com","messagingSenderId":"569311050804","measurementId":"G-876NKRB43N"}
+[debug] [2022-12-30T07:07:33.731Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a [none]
+[debug] [2022-12-30T07:07:34.824Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a 200
+[debug] [2022-12-30T07:07:34.825Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/app-2a72a {"projectId":"app-2a72a","projectNumber":"569311050804","displayName":"amazon-app","name":"projects/app-2a72a","resources":{"hostingSite":"app-2a72a"},"state":"ACTIVE","etag":"1_526e0f9d-3565-44ca-8b45-597047af3f9f"}
+[info] i  hosting[app-2a72a]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[app-2a72a]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-12-30T07:07:34.869Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-30T07:07:34.870Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-30T07:07:34.870Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\rharjai\\.cache\\firebase\\emulators\\ui-v1.11.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\rharjai\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-30T07:07:35.169Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-12-30T07:07:35.169Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Rupali works\rupali-workshop\amazon-clone\my-amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Rupali works\\rupali-workshop\\amazon-clone\\my-amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-12-30T07:07:35.429Z] Validating nodejs source
+[debug] [2022-12-30T07:07:39.996Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.1",
+    "firebase-tools": "^11.19.0",
+    "stripe": "^11.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-30T07:07:39.997Z] Building nodejs source
+[debug] [2022-12-30T07:07:40.000Z] Could not find functions.yaml. Must use http discovery
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:07:40 +0000] "GET /checkout HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:07:40 +0000] \"GET /checkout HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:07:40 +0000] "GET /static/css/main.8f0159fd.css HTTP/1.1" - - "http://127.0.0.1:5000/checkout" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:07:40 +0000] \"GET /static/css/main.8f0159fd.css HTTP/1.1\" - - \"http://127.0.0.1:5000/checkout\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[debug] [2022-12-30T07:07:40.739Z] Serving at port 9005
+
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:07:41 +0000] "GET /static/js/main.97abd3c9.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:07:41 +0000] \"GET /static/js/main.97abd3c9.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[debug] [2022-12-30T07:07:41.668Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-30T07:07:41.681Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/app-2a72a/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/app-2a72a/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:08:21 +0000] "GET /static/css/main.8f0159fd.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:08:21 +0000] \"GET /static/css/main.8f0159fd.css.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:08:32 +0000] "GET /checkout HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:08:32 +0000] \"GET /checkout HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:08:32 +0000] "GET /static/css/main.8f0159fd.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:08:32 +0000] \"GET /static/css/main.8f0159fd.css.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:09:24 +0000] "GET /checkout HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:09:24 +0000] \"GET /checkout HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:09:25 +0000] "GET /static/css/main.8f0159fd.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:09:25 +0000] \"GET /static/css/main.8f0159fd.css.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:10:07 +0000] "GET /static/js/main.97abd3c9.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:10:07 +0000] \"GET /static/js/main.97abd3c9.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:10:07 +0000] "GET /static/js/main.97abd3c9.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:10:07 +0000] \"GET /static/js/main.97abd3c9.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:10:56 +0000] "GET /checkout HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:10:56 +0000] \"GET /checkout HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:10:57 +0000] "GET /logo192.png HTTP/1.1" - - "http://127.0.0.1:5000/checkout" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:10:57 +0000] \"GET /logo192.png HTTP/1.1\" - - \"http://127.0.0.1:5000/checkout\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:10:57 +0000] "GET /static/js/main.97abd3c9.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:10:57 +0000] \"GET /static/js/main.97abd3c9.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:11:12 +0000] "GET /checkout HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:11:12 +0000] \"GET /checkout HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:11:12 +0000] "GET /static/js/main.97abd3c9.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:11:12 +0000] \"GET /static/js/main.97abd3c9.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:11:25 +0000] "GET /checkout HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:11:25 +0000] \"GET /checkout HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:07:11:26 +0000] "GET /static/js/main.97abd3c9.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:07:11:26 +0000] \"GET /static/js/main.97abd3c9.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0\""}}
